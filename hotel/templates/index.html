@@ -577,1239 +577,144 @@ Hotel highly rated for thoughtful design
 </div>
 <div class="list-item">
 <div class="row">
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/hotel/hotel-stanford.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-5.jpg" alt='Hotel Stanford'>
+
+    {% for hotls in hotl %}
+    <div class="col-lg-3 col-md-6">
+
+        <div class="item-loop ">
+
+            <div class="thumb-image ">
+
+                <a href={{hotls.name}}>
+
+                    <img class='img-responsive lazy' src=" /{{hotls.image}} " alt='Hotel Stanford'>
 </a>
-<div class="star-rate">
-<div class="list-star">
-<ul class="booking-item-rating-stars">
+
+                <div class="star-rate">
+
+                    <div class="list-star">
+
+                        <ul class="booking-item-rating-stars">
+
+
+
+{% if hotls.rating == 5  %}
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
-</ul>
-</div>
-</div>
-<div class="service-wishlist " data-id="1" data-type="hotel">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/hotel/hotel-stanford.html">
-Hotel Stanford
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-4.0/5 <span class="rate-text">Very Good</span>
-</span>
-<span class="review">
-3 Reviews
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="text-price">$300 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/hotel/hotel-wbf-homachi.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-6.jpg" alt='Hotel WBF Hommachi'>
-</a>
-<div class="star-rate">
-<div class="list-star">
-<ul class="booking-item-rating-stars">
+{% endif %}
+{% if hotls.rating == 4 or hotls.rating == 4.5 %}
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-</ul>
-</div>
-</div>
-<div class="service-wishlist " data-id="2" data-type="hotel">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/hotel/hotel-wbf-homachi.html">
-Hotel WBF Hommachi
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-5.0/5 <span class="rate-text">Excellent</span>
-</span>
-<span class="review">
-3 Reviews
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="text-price">$350 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/hotel/castello-casole-hotel.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-7.jpg" alt='Castello Casole Hotel'>
-</a>
-<div class="star-rate">
-<div class="list-star">
-<ul class="booking-item-rating-stars">
+{% endif %}
+{% if hotls.rating == 3 or hotls.rating == 3 %}
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-</ul>
-</div>
-</div>
-<div class="service-wishlist " data-id="3" data-type="hotel">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/hotel/castello-casole-hotel.html">
-Castello Casole Hotel
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-5.0/5 <span class="rate-text">Excellent</span>
-</span>
-<span class="review">
-1 Review
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="text-price">$350 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/hotel/redac-gateway-hotel.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-8.jpg" alt='Redac Gateway Hotel'>
-</a>
-<div class="star-rate">
-<div class="list-star">
-<ul class="booking-item-rating-stars">
+{% endif %}
+{% if hotls.rating == 2 or hotls.rating == 2.5 %}
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
 <li><i class="fa fa-star"></i></li>
+{% endif %}
+{% if hotls.rating == 1 or hotls.rating == 1.5 %}
 <li><i class="fa fa-star"></i></li>
-</ul>
-</div>
-</div>
-<div class="service-wishlist " data-id="4" data-type="hotel">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/hotel/redac-gateway-hotel.html">
-Redac Gateway Hotel
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-4.8/5 <span class="rate-text">Excellent</span>
-</span>
-<span class="review">
-4 Reviews
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="text-price">$500 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="container">
-<div class="bravo-list-locations  style_4 ">
-<div class="title">
-Top Destinations
-</div>
-<div class="sub-title">
-It is a long established fact that a reader
-</div>
-<div class="list-item">
-<div class="row">
-<div class="col-lg-4 col-md-6">
-<div class="destination-item ">
-<div class="image" style="background: url(/static/uploads/demo/location/location-1.jpg)">
-<div class="effect"></div>
-<div class="content">
-<h4 class="title">Paris</h4>
-<div class="desc">
-<a href="en/space.html?location_id=1" target="_blank">
-7 Spaces
-</a>
-<a href="en/hotel.html?location_id=1" target="_blank">
-6 Hotels
-</a>
-<a href="en/tour.html?location_id=1" target="_blank">
-5 Tours
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="destination-item ">
-<div class="image" style="background: url(/static/uploads/demo/location/location-2.jpg)">
-<div class="effect"></div>
-<div class="content">
-<h4 class="title">New York, United States</h4>
-<div class="desc">
-<a href="en/space-1.html?location_id=2" target="_blank">
-1 Space
-</a>
-<a href="en/hotel-1.html?location_id=2" target="_blank">
-2 Hotels
-</a>
-<a href="en/tour-1.html?location_id=2" target="_blank">
-4 Tours
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="destination-item ">
-<div class="image" style="background: url(/static/uploads/demo/location/location-3.jpg)">
-<div class="effect"></div>
-<div class="content">
-<h4 class="title">California</h4>
-<div class="desc">
-<a href="en/space-2.html?location_id=3" target="_blank">
-2 Spaces
-</a>
-<a href="en/hotel-2.html?location_id=3" target="_blank">
-1 Hotel
-</a>
-<a href="en/tour-2.html?location_id=3" target="_blank">
-1 Tour
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="destination-item ">
-<div class="image" style="background: url(/static/uploads/demo/location/location-4.jpg)">
-<div class="effect"></div>
-<div class="content">
-<h4 class="title">United States</h4>
-<div class="desc">
-<a href="en/space-3.html?location_id=4" target="_blank">
-1 Space
-</a>
-<a href="en/tour-3.html?location_id=4" target="_blank">
-1 Tour
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="destination-item ">
-<div class="image" style="background: url(/static/uploads/demo/location/location-5.jpg)">
-<div class="effect"></div>
-<div class="content">
-<h4 class="title">Los Angeles</h4>
-<div class="desc">
-<a href="en/hotel-3.html?location_id=5" target="_blank">
-2 Hotels
-</a>
-<a href="en/tour-4.html?location_id=5" target="_blank">
-1 Tour
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="destination-item ">
-<div class="image" style="background: url(/static/uploads/demo/location/location-1.jpg)">
-<div class="effect"></div>
-<div class="content">
-<h4 class="title">New Jersey</h4>
-<div class="desc">
-<a href="en/tour-5.html?location_id=6" target="_blank">
-1 Tour
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="bravo-list-tour box_shadow">
-<div class="container">
-<div class="title">
-Our best promotion tours
-<div class="sub-title">
-Most popular destinations
-</div>
-</div>
-<div class="list-item">
-<div class="row row-eq-height">
-<div class="col-lg-4 col-md-6 col-item">
-<div class="item">
-<div class="header-thumb">
-<div class="sale_info">85%</div>
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/tour/tour-1.jpg" alt='American Parks Trail end Rapid City'>
-<a class="st-btn st-btn-primary tour-book-now" href="en/tour/american-parks-trail.html">Book now</a>
-<div class="service-wishlist " data-id="1" data-type="tour">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="caption clear">
-<div class="title-address">
-<h3 class="title"><a href="en/tour/american-parks-trail.html"> American Parks Trail end Rapid City </a></h3>
-<p class="duration">
-<span>
-6 hours
-</span>
--
-<i>
-Paris
-</i>
-</p>
-</div>
-<div class="g-price">
-<div class="price">
-<span class="onsale">$2.000</span>
-<span class="text-price">$293</span>
-</div>
-</div>
-</div>
-</div> </div>
-<div class="col-lg-4 col-md-6 col-item">
-<div class="item">
-<div class="featured">
-Featured
-</div>
-<div class="header-thumb">
-<div class="sale_info">60%</div>
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/tour/tour-2.jpg" alt='New York: Museum of Modern Art'>
-<a class="st-btn st-btn-primary tour-book-now" href="en/tour/new-york-museum-of-modern-art.html">Book now</a>
-<div class="service-wishlist " data-id="2" data-type="tour">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="caption clear">
-<div class="title-address">
-<h3 class="title"><a href="en/tour/new-york-museum-of-modern-art.html"> New York: Museum of Modern Art </a></h3>
-<p class="duration">
-<span>
-2 hours
-</span>
--
-<i>
-Paris
-</i>
-</p>
-</div>
-<div class="g-price">
-<div class="price">
-<span class="onsale">$900</span>
-<span class="text-price">$355</span>
-</div>
-</div>
-</div>
-</div> </div>
-<div class="col-lg-4 col-md-6 col-item">
-<div class="item">
-<div class="featured">
-Featured
-</div>
-<div class="header-thumb">
-<div class="sale_info">75%</div>
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/tour/tour-3.jpg" alt='Los Angeles to San Francisco Express '>
-<a class="st-btn st-btn-primary tour-book-now" href="en/tour/los-angeles-to-san-francisco-express.html">Book now</a>
-<div class="service-wishlist " data-id="3" data-type="tour">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="caption clear">
-<div class="title-address">
-<h3 class="title"><a href="en/tour/los-angeles-to-san-francisco-express.html"> Los Angeles to San Francisco Express </a></h3>
-<p class="duration">
-<span>
-5 hours
-</span>
--
-<i>
-Paris
-</i>
-</p>
-</div>
-<div class="g-price">
-<div class="price">
-<span class="onsale">$1.500</span>
-<span class="text-price">$372</span>
-</div>
-</div>
-</div>
-</div> </div>
-<div class="col-lg-4 col-md-6 col-item">
-<div class="item">
-<div class="featured">
-Featured
-</div>
-<div class="header-thumb">
-<div class="sale_info">86%</div>
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/tour/tour-4.jpg" alt='Paris Vacation Travel '>
-<a class="st-btn st-btn-primary tour-book-now" href="en/tour/paris-vacation-travel.html">Book now</a>
-<div class="service-wishlist " data-id="4" data-type="tour">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="caption clear">
-<div class="title-address">
-<h3 class="title"><a href="en/tour/paris-vacation-travel.html"> Paris Vacation Travel </a></h3>
-<p class="duration">
-<span>
-3 hours
-</span>
--
-<i>
-New York, United States
-</i>
-</p>
-</div>
-<div class="g-price">
-<div class="price">
-<span class="onsale">$850</span>
-<span class="text-price">$116</span>
-</div>
-</div>
-</div>
-</div> </div>
-<div class="col-lg-4 col-md-6 col-item">
-<div class="item">
-<div class="header-thumb">
-<div class="sale_info">37%</div>
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/tour/tour-5.jpg" alt='Southwest States (Ex Los Angeles) '>
-<a class="st-btn st-btn-primary tour-book-now" href="en/tour/southwest-states.html">Book now</a>
-<div class="service-wishlist " data-id="5" data-type="tour">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="caption clear">
-<div class="title-address">
-<h3 class="title"><a href="en/tour/southwest-states.html"> Southwest States (Ex Los Angeles) </a></h3>
-<p class="duration">
-<span>
-5 hours
-</span>
--
-<i>
-New York, United States
-</i>
-</p>
-</div>
-<div class="g-price">
-<div class="price">
-<span class="onsale">$1.900</span>
-<span class="text-price">$1.192</span>
-</div>
-</div>
-</div>
-</div> </div>
-<div class="col-lg-4 col-md-6 col-item">
-<div class="item">
-<div class="featured">
-Featured
-</div>
-<div class="header-thumb">
-<div class="sale_info">77%</div>
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/tour/tour-6.jpg" alt='Eastern Discovery (Start New Orleans)'>
-<a class="st-btn st-btn-primary tour-book-now" href="en/tour/eastern-discovery-start-new-orleans.html">Book now</a>
-<div class="service-wishlist " data-id="6" data-type="tour">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="caption clear">
-<div class="title-address">
-<h3 class="title"><a href="en/tour/eastern-discovery-start-new-orleans.html"> Eastern Discovery (Start New Orleans) </a></h3>
-<p class="duration">
-<span>
-1 hour
-</span>
--
-<i>
-New York, United States
-</i>
-</p>
-</div>
-<div class="g-price">
-<div class="price">
-<span class="onsale">$2.100</span>
-<span class="text-price">$481</span>
-</div>
-</div>
-</div>
-</div> </div>
-</div>
-</div>
-</div>
-</div><div class="container">
-<div class="bravo-list-space layout_normal">
-<div class="title">
-Rental Listing
-</div>
-<div class="sub-title">
-Homes highly rated for thoughtful design
-</div>
-<div class="list-item">
-<div class="row">
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="featured">
-Featured
-</div>
-<div class="thumb-image ">
-<a href="https://www.bookingcore.org/en/space/stay-greenwich-village">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-11.jpg" alt='STAY GREENWICH VILLAGE'>
-</a>
-<div class="price-wrapper">
-<div class="price">
-<span class="onsale">$300</span>
-<span class="text-price">$150 <span class="unit">/day</span></span>
-</div>
-</div>
-<div class="service-wishlist " data-id="11" data-type="space">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="https://www.bookingcore.org/en/space/stay-greenwich-village">
-<i class="fa fa-bolt d-none"></i>
-STAY GREENWICH VILLAGE
-</a>
-<div class="sale_info">50%</div>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-4.3/5 <span class="rate-text">Very Good</span>
-</span>
-<span class="review">
-4 Reviews
-</span>
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="No. People">
-<i class="input-icon field-icon icofont-people  "></i> 8
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="No. Bed">
-<i class="input-icon field-icon icofont-hotel"></i> 5
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="No. Bathroom">
-<i class="input-icon field-icon icofont-bathtub"></i> 8
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Square">
-<i class="input-icon field-icon icofont-ruler-compass-alt"></i> 192 sqft
-</span>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="https://www.bookingcore.org/en/space/lily-dale-village">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-10.jpg" alt='LILY DALE VILLAGE'>
-</a>
-<div class="price-wrapper">
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$250 <span class="unit">/day</span></span>
-</div>
-</div>
-<div class="service-wishlist " data-id="10" data-type="space">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="https://www.bookingcore.org/en/space/lily-dale-village">
-<i class="fa fa-bolt d-none"></i>
-LILY DALE VILLAGE
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-4.8/5 <span class="rate-text">Excellent</span>
-</span>
-<span class="review">
-4 Reviews
-</span>
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="No. People">
-<i class="input-icon field-icon icofont-people  "></i> 5
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="No. Bed">
-<i class="input-icon field-icon icofont-hotel"></i> 8
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="No. Bathroom">
-<i class="input-icon field-icon icofont-bathtub"></i> 5
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Square">
-<i class="input-icon field-icon icofont-ruler-compass-alt"></i> 115 sqft
-</span>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="https://www.bookingcore.org/en/space/luxury-single">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-9.jpg" alt='LUXURY SINGLE'>
-</a>
-<div class="price-wrapper">
-<div class="price">
-<span class="onsale">$400</span>
-<span class="text-price">$350 <span class="unit">/day</span></span>
-</div>
-</div>
-<div class="service-wishlist " data-id="9" data-type="space">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="https://www.bookingcore.org/en/space/luxury-single">
-<i class="fa fa-bolt d-none"></i>
-LUXURY SINGLE
-</a>
-<div class="sale_info">12%</div>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-4.3/5 <span class="rate-text">Very Good</span>
-</span>
-<span class="review">
-3 Reviews
-</span>
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="No. People">
-<i class="input-icon field-icon icofont-people  "></i> 7
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="No. Bed">
-<i class="input-icon field-icon icofont-hotel"></i> 4
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="No. Bathroom">
-<i class="input-icon field-icon icofont-bathtub"></i> 6
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Square">
-<i class="input-icon field-icon icofont-ruler-compass-alt"></i> 117 sqft
-</span>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="https://www.bookingcore.org/en/space/paris-greenwich-villa">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/space/space-8.jpg" alt='PARIS GREENWICH VILLA'>
-</a>
-<div class="price-wrapper">
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$500 <span class="unit">/day</span></span>
-</div>
-</div>
-<div class="service-wishlist " data-id="8" data-type="space">
-<i class="fa fa-heart"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="https://www.bookingcore.org/en/space/paris-greenwich-villa">
-<i class="fa fa-bolt d-none"></i>
-PARIS GREENWICH VILLA
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="service-review">
-<span class="rate">
-4.7/5 <span class="rate-text">Excellent</span>
-</span>
-<span class="review">
-3 Reviews
-</span>
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="No. People">
-<i class="input-icon field-icon icofont-people  "></i> 10
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="No. Bed">
-<i class="input-icon field-icon icofont-hotel"></i> 9
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="No. Bathroom">
-<i class="input-icon field-icon icofont-bathtub"></i> 6
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Square">
-<i class="input-icon field-icon icofont-ruler-compass-alt"></i> 161 sqft
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="container">
-<div class="bravo-list-car layout_normal">
-<div class="title">
-Car Trending
-</div>
-<div class="sub-title">
-Book incredible things to do around the world.
-</div>
-<div class="list-item">
-<div class="row">
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="featured">
-Featured
-</div>
-<div class="thumb-image ">
-<a href="en/car/vinfast-fadil-standard.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-12.jpg" alt='Vinfast Fadil Standard'>
-</a>
-<div class="service-wishlist " data-id="13" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/vinfast-fadil-standard.html">
-Vinfast Fadil Standard
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-7
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-4
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$400 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/car/vinfast-lux-a20-plus.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-11.jpg" alt='Vinfast Lux A2.0 Plus'>
-</a>
-<div class="service-wishlist " data-id="12" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/vinfast-lux-a20-plus.html">
-<i class="fa fa-bolt d-none"></i>
-Vinfast Lux A2.0 Plus
-</a>
-</div>
-<div class="location">
-California
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-3
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-7
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$350 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/car/vinfast-lux-v8-suv.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-10.jpg" alt='Vinfast Lux V8 (SUV)'>
-</a>
-<div class="service-wishlist " data-id="11" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/vinfast-lux-v8-suv.html">
-<i class="fa fa-bolt d-none"></i>
-Vinfast Lux V8 (SUV)
-</a>
-</div>
-<div class="location">
-Virginia
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-3
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-6
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$250 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="featured">
-Featured
-</div>
-<div class="thumb-image ">
-<a href="en/car/toyota-prius-plus.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-9.jpg" alt='Toyota Prius Plus'>
-</a>
-<div class="service-wishlist " data-id="10" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/toyota-prius-plus.html">
-<i class="fa fa-bolt d-none"></i>
-Toyota Prius Plus
-</a>
-</div>
-<div class="location">
-San Francisco
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-9
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-10
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$199 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/car/honda-civic.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-8.jpg" alt='Honda Civic'>
-</a>
-<div class="service-wishlist " data-id="9" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/honda-civic.html">
-<i class="fa fa-bolt d-none"></i>
-Honda Civic
-</a>
-</div>
-<div class="location">
-New Jersey
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-9
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-3
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$450 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/car/vinfast-lux-sa20-plus.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-7.jpg" alt='Vinfast Lux SA2.0 Plus'>
-</a>
-<div class="service-wishlist " data-id="8" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/vinfast-lux-sa20-plus.html">
-<i class="fa fa-bolt d-none"></i>
-Vinfast Lux SA2.0 Plus
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-10
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-7
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$600 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/car/mercedes-benz.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-6.jpg" alt='Mercedes Benz'>
-</a>
-<div class="service-wishlist " data-id="7" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/mercedes-benz.html">
-<i class="fa fa-bolt d-none"></i>
-Mercedes Benz
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-10
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-9
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$200 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="item-loop ">
-<div class="thumb-image ">
-<a href="en/car/vinfast-fadil-plus.html">
-<img class='img-responsive lazy' data-src="https://www.bookingcore.org/uploads/demo/car/car-5.jpg" alt='Vinfast Fadil Plus'>
-</a>
-<div class="service-wishlist " data-id="6" data-type="car">
-<i class="fa fa-heart-o"></i>
-</div>
-</div>
-<div class="item-title">
-<a href="en/car/vinfast-fadil-plus.html">
-Vinfast Fadil Plus
-</a>
-</div>
-<div class="location">
-Paris
-</div>
-<div class="amenities">
-<span class="amenity total" data-toggle="tooltip" title="Passenger">
-<i class="input-icon field-icon icon-passenger  "></i>
-<span class="text">
-5
-</span>
-</span>
-<span class="amenity bed" data-toggle="tooltip" title="Gear Shift">
-<i class="input-icon field-icon icon-gear"></i>
-<span class="text">
-Auto
-</span>
-</span>
-<span class="amenity bath" data-toggle="tooltip" title="Baggage">
-<i class="input-icon field-icon icon-baggage"></i>
-<span class="text">
-6
-</span>
-</span>
-<span class="amenity size" data-toggle="tooltip" title="Door">
-<i class="input-icon field-icon icon-door"></i>
-<span class="text">
-4
-</span>
-</span>
-</div>
-<div class="info">
-<div class="g-price">
-<div class="prefix">
-<span class="fr_text">from</span>
-</div>
-<div class="price">
-<span class="onsale"></span>
-<span class="text-price">$400 <span class="unit">/night</span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+{% endif %}
+
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="service-wishlist " data-id="1" data-type="hotel">
+
+                    <i class="fa fa-heart"></i>
+
+                </div>
+
+            </div>
+
+            <div class="item-title">
+
+                <a href="{{hotls.name}}">
+
+                    {{hotls.name}}
+
+                </a>
+
+            </div>
+
+            <div class="location">
+
+                {{hotls.location}}
+
+            </div>
+
+            <div class="service-review">
+
+                <span class="rate">
+
+                    {{hotls.rating}}/5 <span class="rate-text">{{hotls.tags}}</span>
+
+                </span>
+
+                <span class="review">
+
+                    3 Reviews
+
+                </span>
+
+            </div>
+
+            <div class="info">
+
+                <div class="g-price">
+
+                    <div class="prefix">
+
+                        <span class="fr_text">from</span>
+
+                    </div>
+
+                    <div class="price">
+
+                        <span class="text-price">INR {{hotls.price}} <span class="unit">/night</span></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
 <div class="bravo-list-news">
 <div class="container">
 <div class="title">
